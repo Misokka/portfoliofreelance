@@ -112,6 +112,8 @@ const Footer = () => {
             Fait par Jérémy<br></br>
             <br></br>
             Suivez-moi sur GitHub
+            <br></br>
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=wWEBY3Dvc-b8MJpl" target="_blank">Rick</a>
           </div>
 
           {githubInfo.stars && githubInfo.forks && (
