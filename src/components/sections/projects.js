@@ -34,16 +34,20 @@ const StyledArchiveLink = styled(Link)`
 `;
 const StyledGrid = styled.div`
   margin-top: 50px;
-  margin-left: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-    position: relative;
-    ${media.desktop`grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));`};
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste dynamiquement les colonnes */
+    grid-gap: 20px;
+    max-width: 1100px; /* Empêche l'étalement excessif */
+    width: 100%;
+    justify-content: center; /* Centre la grille */
   }
 `;
+
 const StyledProjectInner = styled.div`
   ${mixins.boxShadow};
   ${mixins.flexBetween};

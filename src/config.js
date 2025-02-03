@@ -10,7 +10,7 @@ module.exports = {
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
   name: 'Jérémy Caron-Labalette',
   location: 'France',
-  email: 'jeremy.caron.labalette@gmail.com',
+  email: 'contact@jeremy-caron-labalette.fr',
   github: 'https://github.com/Misokka',
   twitterHandle: '@JeremyDev',
   socialMedia: [
@@ -23,16 +23,12 @@ module.exports = {
       url: 'https://www.linkedin.com/in/jeremy-caron-labalette',
     },
     {
-      name: 'Leetcode',
-      url: 'https://leetcode.com/',
+      name: 'Codeur.com',
+      url: 'https://www.codeur.com/-jeremyckmrr',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/',
+      url: 'https://www.instagram.com/jeremy.webdev/?utm_source=ig_web_button_share_sheet',
     },
   ],
 
