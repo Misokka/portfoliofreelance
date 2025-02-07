@@ -6,6 +6,15 @@ import styled from 'styled-components';
 import { theme, mixins, media } from '@styles';
 const { colors, fontSizes, fonts } = theme;
 
+const StyledSocial = styled.div`
+  color: ${colors.lightSlate};
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 10px;
+  display: block;
+  ${media.tablet`margin-bottom: 20px;`}; /* Ajoutez une marge en bas pour séparer les éléments en mode mobile */
+`;
+
 const StyledContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
@@ -13,27 +22,23 @@ const StyledContainer = styled.footer`
   text-align: center;
   height: auto;
   min-height: 70px;
+  margin-bottom: 20px;
 `;
-const StyledSocial = styled.div`
-  color: ${colors.lightSlate};
-  width: 100%;
-  max-width: 270px;
-  margin: 0 auto 10px;
-  display: none;
-  ${media.tablet`display: block;`};
-`;
+
 const StyledSocialList = styled.ul`
   ${mixins.flexBetween};
   padding: 0;
   margin: 0;
   list-style: none;
 `;
+
 const StyledSocialLink = styled.a`
   padding: 10px;
   svg {
     width: 20px;
     height: 20px;
   }
+  ${media.tablet`margin-top: 50px;`}; 
 `;
 const StyledMetadata = styled.div`
   font-family: ${fonts.SFMono};
