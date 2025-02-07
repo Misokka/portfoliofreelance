@@ -19,10 +19,10 @@ const iconSlugs = [
   "sass",
   "postgresql",
   "mysql",
-  "vuejs",
-  "reactjs",
-  "html",
-  "css",
+  "vuedotjs",
+  "react",
+  "html5",
+  "css3",
 ];
 
 const IconCloudSection = () => {

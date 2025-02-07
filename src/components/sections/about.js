@@ -183,7 +183,7 @@ const About = ({ data }) => {
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </StyledContent>
         <StyledPic>
-          <StyledAvatarLink href={github}>
+          <StyledAvatarLink href={github} target="_blank" rel="noopener noreferrer">
             <StyledAvatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
             <StyledChillGuy src={chillGuy} alt="Chill Guy" />
           </StyledAvatarLink>
