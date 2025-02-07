@@ -8,19 +8,19 @@ const Main = styled.main`
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   ${media.desktop`
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   `};
   ${media.tablet`
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   `};
   ${media.phablet`
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   `};
 
   &.fillHeight {
@@ -42,3 +42,5 @@ const Main = styled.main`
 `;
 
 export default Main;
+
+

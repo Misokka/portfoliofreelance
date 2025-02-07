@@ -5,17 +5,26 @@ skills:
   - PHP
   - Symfony
   - Laravel
-  - HTML || CSS
+  - HTML
+  - CSS
   - Java
   - WordPress
   - Shopify
   - Docker
   - Tailwind
   - Javascript
-  - ReactJS || NodeJS || NextJS || Vue.js
-  - Git || Github
-  - Postgres || Mysql
+  - ReactJS
+  - NodeJS
+  - NextJS
+  - Vue.js
+  - Git
+  - Github
+  - Postgres
+  - Mysql
+  - Figma
 ---
+
+
 
 Bonjour ! Mon intérêt pour le développement a commencé en 2018, lorsque j’ai découvert le monde passionnant de la programmation. Depuis, j’ai développé mes compétences en apprenant plusieurs langages de programmation et en travaillant sur des projets axés sur la création d'applications performantes et intuitives.
 

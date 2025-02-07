@@ -70,7 +70,6 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    // TODO: Mettre une API pour récupérer le nombre de likes de mon code sur GitHub
     fetch('')
       .then(response => response.json())
       .then(json => {
@@ -112,6 +111,7 @@ const Footer = () => {
             Fait par Jérémy<br></br>
             <br></br>
             Suivez-moi sur GitHub
+            <br></br>
             <br></br>
             <a href="https://youtu.be/dQw4w9WgXcQ?si=wWEBY3Dvc-b8MJpl" target="_blank">Rick</a>
           </div>

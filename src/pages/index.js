@@ -5,8 +5,13 @@ import { Layout, Hero, About, Jobs, Featured, Projects, Contact } from '@compone
 import styled from 'styled-components';
 import { Main } from '@styles';
 
+
 const StyledMainContainer = styled(Main)`
   counter-reset: section;
+  & > section {
+    margin-bottom: -150px;
+    margin-top: 20px;
+  }
 `;
 
 const IndexPage = ({ location, data }) => (
