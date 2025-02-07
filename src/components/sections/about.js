@@ -6,6 +6,7 @@ import { srConfig, github } from '@config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '@styles';
 import IconCloudSection from '@components/IconCloudSection';
+import chillGuy from '../chill_guy.png';
 
 const { colors, fontSizes, fonts } = theme;
 
@@ -38,7 +39,7 @@ const StyledSkillsWrapper = styled.div`
 
 const StyledSkillsHeading = styled.h3`
   font-size: ${fontSizes.xxl};
-  margin-bottom: 80px; /* Ajoute de l'espace sous le titre */
+  margin-bottom: 80px;
   color: ${colors.lightestSlate};
 `;
 
@@ -83,19 +84,28 @@ const Skill = styled.li`
 
 const StyledPic = styled.div`
   position: relative;
-  width: 40%;
+  width: 100%;
   max-width: 300px;
+  height: 300px;
   margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   ${media.tablet`margin: 60px auto 0;`};
-  ${media.phablet`width: 70%;`};
+  ${media.phablet`width: 70%; height: auto;`};
 `;
+
 
 const StyledAvatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
   border-radius: ${theme.borderRadius};
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: ${theme.transition};
 `;
+
 
 const StyledAvatarLink = styled.a`
   ${mixins.boxShadow};
@@ -142,6 +152,23 @@ const StyledAvatarLink = styled.a`
   }
 `;
 
+const StyledChillGuy = styled.img`
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 60px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scale(0.8);
+
+  ${StyledAvatarLink}:hover & {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
+
 const About = ({ data }) => {
   const { frontmatter, html } = data[0].node;
   const { title, skills, avatar } = frontmatter;
@@ -158,6 +185,7 @@ const About = ({ data }) => {
         <StyledPic>
           <StyledAvatarLink href={github}>
             <StyledAvatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
+            <StyledChillGuy src={chillGuy} alt="Chill Guy" />
           </StyledAvatarLink>
         </StyledPic>
       </StyledFlexContainer>
